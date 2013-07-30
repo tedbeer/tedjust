@@ -1,19 +1,18 @@
 tedjust
 =======
 
-Adjust flow tweak/speed for some layer(s)
-by Eduard Bespalov AKA tedbeer (edwbes@gmail.com), 2013
+**tedjust** is python 3 script to tweek G-code files. It can adjust flow rate/printing speed for some layer(s) and can be used for post-processing after slicing.
+
+Created by Eduard Bespalov AKA tedbeer (edwbes@gmail.com), 2013
 
 **License:** CC BY-SA (Creative Commons Attribution-ShareAlike)
 	http://creativecommons.org/licenses/by-sa/3.0
 
-Python 3 script to tweek G-code files. It can be used for post-processing after slicing.
-
 **In what cases it can be usefull:**
  * modify flow rate for the first level(s) to improve stickness, to compensate rough bed
  * modify speed/flow rate for bridge layer if slicer can't do it
- * increase moving speed for layers where model is simple
- * decrease moving speed for layers where precision is important
+ * increase printing speed for layers where model is simple
+ * decrease printing speed for layers where precision is important
 
 **Usage:** python tedjust.py filename.gcode layer_tweak layer_tweak [layer_tweak layer_tweak ...]
 
